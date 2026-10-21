@@ -18,6 +18,20 @@ If you are developing a production application, we recommend using TypeScript wi
 E-Commerce Frontend (React + Vite)
 A modern, fast, and responsive e-commerce frontend user interface built using React and Vite.
 
+## 🤖 Advanced AI Features & Roadmap
+
+### 1. Multi-Modal Discovery & Visual Search
+* **Image-Based Search:** Upload product images to find visually similar inventory using vector embedding similarity.
+* **AI Review Summarizer:** Automatically condense customer feedback into sentiment highlights and key pros/cons.
+
+### 2. Conversational Commerce & Vector Search
+* **Semantic Natural Language Search:** Vector-based search engine (RAG architecture) for context-aware product queries.
+* **AI Shopping Assistant:** Dynamic conversational guide built with LLMs to curate personalized product bundles.
+
+### 3. Edge AI & Performance Enhancements
+* **In-Browser WebGPU Inference:** Run client-side visual tasks (e.g., image enhancement, local filtering) locally to reduce API latency.
+* **Streaming UI Components:** WebSockets/SSE-enabled interface for real-time AI responses and live recommendations.
+
 🚀 Features
 Product Showcase: Dynamic UI for browsing e-commerce items and categories.
 
