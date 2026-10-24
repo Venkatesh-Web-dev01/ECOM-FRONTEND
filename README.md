@@ -43,6 +43,24 @@ graph TD
     Catalog -->|5. Rich Metadata| LLM[LLM Assistant / RAG]
     LLM -->|6. Personalized Recommendations| User
 
+```markdown
+## 🤖 Production-Ready AI Features
+
+### 1. Visual Product Search & Multi-Modal Discovery
+* **Implementation:** Embed images on upload using lightweight CLIP models (`clip-vit-base-patch32`).
+* **Vector Indexing:** Query HNSW index in **Qdrant** or **pgvector** using cosine similarity threshold $\ge 0.82$.
+* **Edge Processing:** Preprocess, resize, and normalize user images locally using `Canvas API` and `ONNX Runtime Web` before network dispatch.
+
+### 2. Conversational RAG & Agentic Commerce
+* **Architecture:** Retrieval-Augmented Generation (RAG) over vector-embedded product catalog metadata.
+* **Streaming Engine:** Deliver LLM output via **Server-Sent Events (SSE)** with dynamic token rendering using UI component streams.
+* **Context Window:** Maintain a rolling 5-turn dialog history stored in browser `sessionStorage`.
+
+### 3. Client-Side WebGPU Acceleration
+* **Local Feature Extraction:** Execute `transformers.js` via **WebGPU** for zero-latency background removal and local text-embedding generation.
+* **Fallback Strategy:** Automatic graceful degradation to WebAssembly (WASM) or server-side endpoint if WebGPU execution context is unavailable.
+
+
 🚀 Features
 Product Showcase: Dynamic UI for browsing e-commerce items and categories.
 
