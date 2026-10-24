@@ -32,6 +32,17 @@ A modern, fast, and responsive e-commerce frontend user interface built using Re
 * **In-Browser WebGPU Inference:** Run client-side visual tasks (e.g., image enhancement, local filtering) locally to reduce API latency.
 * **Streaming UI Components:** WebSockets/SSE-enabled interface for real-time AI responses and live recommendations.
 
+* ## 🛠️ Advanced AI Architecture & Data Flow
+
+```mermaid
+graph TD
+    User([User]) -->|1. Natural Language / Image Query| SearchUI[Search UI]
+    SearchUI -->|2. Multimodal Embedding| CLIP[CLIP / Vector Model]
+    CLIP -->|3. Similarity Vector| VectorDB[(Vector DB / Qdrant)]
+    VectorDB -->|4. Ranked SKU IDs| Catalog[Product Catalog API]
+    Catalog -->|5. Rich Metadata| LLM[LLM Assistant / RAG]
+    LLM -->|6. Personalized Recommendations| User
+
 🚀 Features
 Product Showcase: Dynamic UI for browsing e-commerce items and categories.
 
@@ -81,30 +92,7 @@ Build for production:
 
 Bash
 npm run build
-🤖 Advanced AI Concepts & Features to Add
-1. Visual Search & Smart Discovery
-Visual Product Search (Image-to-Product Matching): Allow users to upload a photo or snap a picture to find similar products in the inventory using multi-modal embeddings (e.g., CLIP or ViT models).
 
-AI Virtual Try-On / AR Preview: Integrate WebXR or Canvas-based visualizers allowing customers to preview apparel, accessories, or home decor in real time or over uploaded user photos.
-
-Auto-Tagging & Visual Attribute Extraction: Automatically detect product traits (color, pattern, style, material) from product image uploads using vision AI during merchant onboarding.
-
-2. Conversational & Agentic Shopping Assistance
-Semantic Search (Vector RAG): Replace traditional keyword search with natural language search using vector embeddings (e.g., "Show me lightweight summer dresses suitable for a beach wedding").
-
-AI Personal Shopping Agent: A conversational agent that asks clarifying questions, filters items dynamically based on intent, and constructs customized bundles or gift guides.
-
-Intent-Driven Voice Search: Web Speech API integration paired with natural language understanding (NLU) to parse complex voice queries like "Find white sneakers under $100 in size 10".
-
-3. Hyper-Personalization & Dynamic Merchandising
-Predictive Recommendation Engine: Real-time collaborative and content-based filtering that updates recommendations based on session clickstreams and dwell time.
-
-Dynamic Pricing & Personal Offers Engine: Micro-segmentation models that trigger real-time personalized discounts or flash promotions to prevent cart abandonment.
-
-AI Generated Reviews & Summary Aggregation: LLM-powered review summarization that highlights pros, cons, and sizing fits from hundreds of user reviews into key bullet points.
-
-4. Advanced Frontend Architecture & Engineering
-Edge-Inference & Local WebGPU AI: Run lightweight AI models (like background removal, image vectorization, or local sentiment analysis) directly in the browser via ONNX Runtime Web / WebGPU to cut backend latency and cloud costs.
 
 Streaming AI Responses (Server-Sent Events / WebSockets): Implement token streaming UI indicators for conversational assistants to deliver instant user feedback.
 
