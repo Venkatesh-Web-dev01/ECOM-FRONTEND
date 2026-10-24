@@ -60,6 +60,24 @@ graph TD
 * **Local Feature Extraction:** Execute `transformers.js` via **WebGPU** for zero-latency background removal and local text-embedding generation.
 * **Fallback Strategy:** Automatic graceful degradation to WebAssembly (WASM) or server-side endpoint if WebGPU execution context is unavailable.
 
+```mermaid
+sequenceDiagram
+    autonumber
+    actor User
+    participant Frontend as React Frontend (Vite)
+    participant WebGPU as Local WebGPU / WASM
+    participant API as AI Gateway
+    participant VectorDB as Vector Database
+
+    User->>Frontend: Uploads outfit image
+    Frontend->>WebGPU: Generate image embedding locally
+    WebGPU-->>Frontend: 512-dim Float32 Array
+    Frontend->>API: POST /api/v1/search/visual (Embedding)
+    API->>VectorDB: Cosine Similarity Search
+    VectorDB-->>API: Top-K Matching Product IDs
+    API-->>Frontend: JSON payload with product details & confidence score
+    Frontend-->>User: Render visual match grid
+
 
 🚀 Features
 Product Showcase: Dynamic UI for browsing e-commerce items and categories.
