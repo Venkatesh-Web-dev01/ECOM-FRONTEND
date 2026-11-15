@@ -1,5 +1,6 @@
 # React + Vite
-Summary of this repository: Multi-Modal Discovery & Visual Search Includes image-based search (finding visually similar inventory via vector embeddings) and an AI review summarizer to condense customer feedback into pros, cons, and sentiment highlights.
+Summary of this repository: Multi-Modal Discovery & Visual Search Includes image-based search (finding visually similar inventory via vector embeddings) and an AI review summarizer to condense customer feedback into pros, cons, and sentiment highlights.This repository is my college project.
+we are create a ECOM website and it is Frontend.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
