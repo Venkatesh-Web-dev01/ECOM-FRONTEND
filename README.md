@@ -57,6 +57,16 @@ Responsive Design: Mobile-first UI layout for smooth browsing on all devices.
 
 Modular Component Structure: Built with reusable React components for easy maintenance and scaling.
 
+## ✨ Key Features
+
+> **Multi-Modal Discovery:** Upload an image to find visually similar inventory via vector embeddings, or read AI-condensed customer feedback highlighting pros, cons, and sentiment.
+
+* **🛒 Product Showcase:** Dynamic UI for browsing e-commerce items and categories.
+* **⚡ Instant Performance:** Powered by Vite for instant server start and Hot Module Replacement (HMR).
+* **📱 Responsive Design:** Mobile-first layout for smooth browsing across desktop, tablet, and mobile.
+* **🧩 Modular Architecture:** Built with reusable React components for easy scaling.
+* **🤖 Production AI Ready:** Designed for streaming AI responses (SSE/WebSockets) and Micro-Frontend isolation.
+
 🛠️ Tech Stack
 Frontend Framework: React
 
