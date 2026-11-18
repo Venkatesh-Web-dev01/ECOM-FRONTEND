@@ -69,6 +69,12 @@ Modular Component Structure: Built with reusable React components for easy maint
 
 🛠️ Tech Stack
 Frontend Framework: React
+| Layer | Technologies | Description |
+| :--- | :--- | :--- |
+| **Core Frontend** | `React (ES6+)` | Component-based user interface |
+| **Bundler & Dev** | `Vite` | Next-generation frontend tooling & HMR |
+| **AI & Edge Compute** | `CLIP` · `WebGPU` · `ONNX` | Client-side visual & semantic search |
+| **Code Quality** | `ESLint` | Linting and consistent code formatting |
 
 Build Tool: Vite
 
