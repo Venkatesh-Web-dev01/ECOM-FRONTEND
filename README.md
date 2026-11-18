@@ -47,18 +47,6 @@ A modern, fast, and responsive e-commerce frontend user interface built using Re
 
 
 
-* ## 🛠️ Advanced AI Architecture & Data Flow
-
-```mermaid
-graph TD
-    User([User]) -->|1. Natural Language / Image Query| SearchUI[Search UI]
-    SearchUI -->|2. Multimodal Embedding| CLIP[CLIP / Vector Model]
-    CLIP -->|3. Similarity Vector| VectorDB[(Vector DB / Qdrant)]
-    VectorDB -->|4. Ranked SKU IDs| Catalog[Product Catalog API]
-    Catalog -->|5. Rich Metadata| LLM[LLM Assistant / RAG]
-    LLM -->|6. Personalized Recommendations| User
-
-
 
 🚀 Features
 Product Showcase: Dynamic UI for browsing e-commerce items and categories.
