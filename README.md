@@ -4,6 +4,31 @@ we are create a ECOM website and it is Frontend.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+<div align="center">
+
+# 🛍️ ECOM-fro-pvp
+**E-Commerce Frontend (React + Vite)**
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![WebGPU](https://img.shields.io/badge/WebGPU-AI_Accelerated-orange?style=for-the-badge)
+
+*A modern, fast, and responsive e-commerce frontend user interface powered by Multi-Modal Visual Search and RAG.*
+
+</div>
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Frontend** | React (ES6+) | Component-based UI architecture |
+| **Build Tool** | Vite | Instant server start & HMR |
+| **AI & Edge** | CLIP / WebGPU / ONNX | Client-side visual & semantic search |
+| **Code Quality** | ESLint | Linting and code formatting |
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
